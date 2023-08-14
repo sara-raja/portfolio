@@ -1,0 +1,51 @@
+/*Hybrid of Andy Bells reset.*/
+*,
+*::before,
+*::after
+/*when you use one colon its apseudo class, when
+you use two colon its a pseudo tag.*/{
+	box-sizing: border-box;
+}
+
+body,
+h1,h2,h3,h4,
+p,ul,ol,dl,
+li,dd,
+figcaption, figure, blockquote{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3{
+	font-size: 16px;
+}
+
+ul,ol {
+	list-style-type: none;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	/*this makes the image fill the container that
+	it is in. There are 3 issues:
+	If you go from square to rectangl,e the img will be 
+	skewd
+	if
+	 the img is too big or small it will be pixelate. 
+	*/
+}
+
+/*this targets direct descendants of the articlel
+*/
+article>*+* {
+	margin-top: 1em;
+	/*articles dont always inherti the padding and the margins. 
+	*/
+}
+
+/*also have some issues with font inheritance*/
+input, button,
+textarea,select{
+	font: inherit;
+}
