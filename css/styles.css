@@ -201,6 +201,9 @@ section.skills ul{
 }
 .project > div{
 	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
 .flex{
 	display: flex;
@@ -212,7 +215,6 @@ section.skills ul{
 	border: 1px solid var(--navy-blue);
 	border-radius: 2rem;
 	padding: 0.5rem 1rem;
-	/* align-items: baseline; */
 }
 ul.achievements li:not(:first-of-type)::before,
 .volunteering li:not(:first-of-type)::before{
@@ -226,6 +228,25 @@ ul.achievements li:not(:first-of-type)::before,
 ul.achievements li:first-of-type,
 .volunteering li:first-of-type{
 	margin-bottom:1rem;
+}
+.view-button{
+	border: 1px solid var(--navy-blue);
+	border-radius: 2rem;
+	padding: 0.5rem 2rem;
+	background-color: var(--navy-blue);
+	color: var(--light-blue);
+	width: 200px;
+	align-self: center;
+	margin: 2rem 0 0 0;
+}
+.view-button div{
+	color: var(--light-blue);
+}
+.view-button:hover{
+	background-color: var(--light-blue);
+}
+.view-button div:hover{
+	color: var(--navy-blue);
 }
 /* About :Volunteering */
 .volunteering{
